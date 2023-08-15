@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css'
 // Imports that will need to transition to public folder on deployment
 // import cartIcon from '../../../public/images/icon-cart.svg'
 import cartIcon from '../../assets/images/icon-cart.svg';
@@ -8,8 +9,8 @@ const Header = () => {
   return (
     <header id='header'>
         <nav id='nav-bar'>
-            <h2 id='brand-title'>sneakers</h2>
             <ul id='collections-list' class='nav-items'>
+                <li id='brand-title'>sneakers</li>
                 <li id='collections'>Collections</li>
                 <li id='men'>Men</li>
                 <li id='women'>Women</li>
@@ -21,7 +22,7 @@ const Header = () => {
                     <img src={cartIcon} alt='cart-icon'></img>
                 </li>
                 <li id='profile'>
-                <img src={profilePic} alt='cart-icon'></img>
+                <img src={profilePic} alt='cart-icon' width='32'></img>
                 </li>
             </ul>
         </nav>

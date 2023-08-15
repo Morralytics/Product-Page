@@ -1,0 +1,25 @@
+#nav-bar,
+.nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#collections-list {
+    margin-left: 7rem;
+}
+
+#collections-list li{
+    padding-left: 3rem;
+}
+
+#user-items {
+    margin-right: 4rem;
+}
+
+#user-items li {
+    padding-left: 2rem;
+}
