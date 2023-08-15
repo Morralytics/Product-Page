@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial');
+
 #nav-bar,
 .nav-items {
     list-style: none;
@@ -19,15 +21,17 @@
 }
 
 #user-items {
-    margin-right: 4rem;
+    margin-right: 7rem;
 }
 
 #user-items li {
-    padding-left: 2rem;
+    padding-left: 3rem;
 }
 
 #brand-title {
-    font-weight: 780;
+    font-family: 'Questrial';
+    font-weight: bold;
     font-size: 35px;
     color: black;
+    padding-right: 1rem;
 }
