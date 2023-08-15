@@ -6,10 +6,12 @@
     align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
+    
 }
 
 #collections-list {
     margin-left: 7rem;
+    color: #7C7D81;
 }
 
 #collections-list li{
@@ -22,4 +24,10 @@
 
 #user-items li {
     padding-left: 2rem;
+}
+
+#brand-title {
+    font-weight: 780;
+    font-size: 35px;
+    color: black;
 }
