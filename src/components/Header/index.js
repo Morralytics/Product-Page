@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header id='header'>
         <nav id='nav-bar'>
-            <ul id='collections-list' class='nav-items'>
+            <ul id='collections-list' className='nav-items'>
                 <li id='brand-title'>sneakers</li>
                 <li id='collections'>Collections</li>
                 <li id='men'>Men</li>
@@ -17,7 +17,7 @@ const Header = () => {
                 <li id='about'>About</li>
                 <li id='contact'>Contact</li>
             </ul>
-            <ul id='user-items' class='nav-items'>
+            <ul id='user-items' className='nav-items'>
                 <li id='cart'>
                     <img src={cartIcon} alt='cart-icon'></img>
                 </li>
