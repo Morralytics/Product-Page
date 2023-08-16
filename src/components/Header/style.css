@@ -47,9 +47,24 @@
 }
 
 /* Hover abilities */
+#brand-title:hover {
+    cursor: default;
+}
 /* Nice trick to do exclude some list items */
 #collections-list li:not(:first-child):hover {
     cursor: pointer;
     border-bottom: 3px solid rgb(255, 125, 26);
     margin-bottom: -3px;
+}
+
+#cart:hover {
+    cursor: pointer;
+}
+
+#profile-pic:hover {
+    cursor: pointer;
+    border: 2px solid rgb(255, 125, 26);
+    border-radius: 50%;
+    margin-right: -2px;
+    margin-left: -2px;
 }

@@ -22,7 +22,7 @@ const Header = () => {
                     <img src={cartIcon} alt='cart-icon'></img>
                 </li>
                 <li id='profile'>
-                <img src={profilePic} alt='cart-icon' width='48'></img>
+                <img src={profilePic} alt='cart-icon' id='profile-pic' width='48'></img>
                 </li>
             </ul>
         </nav>
