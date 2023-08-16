@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import SupportCard from '../SupportCard';
 
 const Card = () => {
 
@@ -13,12 +14,15 @@ const Card = () => {
       .then((data) => setCards(data))
   }, []);
 
-  const card = cards.map((card, i) => {
-    return <li key={i}><img src={card.img} alt={'card' + i} id={'card' + i}/></li>
+  // This is now rendering each card as their own SupportCard child that will be rendered into this parent component
+  // Next I need to render a single card that can change when the child element is hovered (not sure if that is possible)
+  const card = cards.map((card) => {
+    return <SupportCard key={card.i} card={card}/>
   });
 
   return (
     <div>
+      <div>Placeholder</div>
       <ul>
         {card}
       </ul>
