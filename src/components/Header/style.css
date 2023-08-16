@@ -7,8 +7,7 @@
     justify-content: space-between;
     align-items: center;
     padding-left: 1rem;
-    padding-right: 1rem;
-    
+    padding-right: 1rem; 
 }
 
 #collections-list {
@@ -25,7 +24,7 @@
 }
 
 #user-items li {
-    padding-left: 3rem;
+    padding-right: 3rem;
 }
 
 #brand-title {
@@ -34,4 +33,12 @@
     font-size: 35px;
     color: black;
     padding-right: 1rem;
+}
+
+#horizontal-rule {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    color: #7C7D81;
+    opacity: .5;
 }

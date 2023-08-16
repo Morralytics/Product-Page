@@ -26,6 +26,7 @@ const Header = () => {
                 </li>
             </ul>
         </nav>
+        <hr id='horizontal-rule'></hr>
     </header>
   )
 }
