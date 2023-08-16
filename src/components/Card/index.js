@@ -22,7 +22,7 @@ const Card = () => {
 
   return (
     <div>
-      <div>Placeholder</div>
+      <div><img src={cards[0].img} alt='main-card' id='main-card'/></div>
       <ul>
         {card}
       </ul>
