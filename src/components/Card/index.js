@@ -13,9 +13,12 @@ const Card = () => {
       .then((data) => setCards(data))
   }, []);
 
+  const card = cards.map((card, i) => <li key={i}><img src={card} alt={'card' + i} /></li>);
   return (
     <div>
-
+      <ul>
+        {card}
+      </ul>
     </div>
   )
 };
