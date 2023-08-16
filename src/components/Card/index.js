@@ -13,11 +13,11 @@ const Card = () => {
       .then((response) => response.json())
       .then((data) => setCards(data))
   }, []);
-
+  console.log(cards)
   // This is now rendering each card as their own SupportCard child that will be rendered into this parent component
   // Next I need to render a single card that can change when the child element is hovered (not sure if that is possible)
-  const card = cards.map((card) => {
-    return <SupportCard key={card.i} card={card}/>
+  const card = cards.map((card, i) => {
+    return <SupportCard key={i} keyId={i} card={card}/>
   });
 
   return (
