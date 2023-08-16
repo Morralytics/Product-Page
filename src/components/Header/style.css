@@ -5,22 +5,25 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem; 
+    align-items: center; 
+}
+
+.nav-items li {
+    padding-bottom: 7%;
 }
 
 #collections-list {
-    margin-left: 7rem;
+    margin-left: 8rem;
+    margin-top: 3rem;
     color: #7C7D81;
 }
 
 #collections-list li{
-    padding-left: 3rem;
+    margin-left: 3rem;
 }
 
 #user-items {
-    margin-right: 7rem;
+    margin-right: 10.5rem;
 }
 
 #user-items li {
@@ -36,9 +39,17 @@
 }
 
 #horizontal-rule {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 1%;
+    margin-left: 11%;
+    margin-right: 11%;
+    margin-top: -22px;
     color: #7C7D81;
-    opacity: .5;
+    opacity: .2;
+}
+
+/* Hover abilities */
+/* Nice trick to do exclude some list items */
+#collections-list li:not(:first-child):hover {
+    cursor: pointer;
+    border-bottom: 3px solid rgb(255, 125, 26);
+    margin-bottom: -3px;
 }
