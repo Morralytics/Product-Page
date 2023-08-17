@@ -24,8 +24,12 @@ const Card = () => {
 
   return (
     <div>
-      {/* Bug/ Trying to render before it is mounted which is why the image shows up after a change but not on page reload */}
-      <div><img src={cards[0].img} alt='main-card' id='main-card'/></div>
+      {cards.length ? (
+        <div><img src={cards && cards[0].img} alt='main-card' id='main-card'/></div>
+      ) : (
+      <></>
+      )}
+      
       <ul id='image-collection'>
         {card}
       </ul>
