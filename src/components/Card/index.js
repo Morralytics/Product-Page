@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import SupportCard from '../SupportCard';
+
+import './style.css';
 
 const Card = () => {
 
@@ -22,8 +24,9 @@ const Card = () => {
 
   return (
     <div>
+      {/* Bug/ Trying to render before it is mounted which is why the image shows up after a change but not on page reload */}
       <div><img src={cards[0].img} alt='main-card' id='main-card'/></div>
-      <ul>
+      <ul id='image-collection'>
         {card}
       </ul>
     </div>
