@@ -25,7 +25,7 @@ const Card = () => {
   return (
     <div>
       {cards.length ? (
-        <div><img src={cards && cards[0].img} alt='main-card' id='main-card'/></div>
+        <div><img src={cards && cards[0].img} alt='main-card' id='main-card' width='500px'/></div>
       ) : (
       <></>
       )}

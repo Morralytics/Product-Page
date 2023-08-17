@@ -1,3 +1,7 @@
 #support-card {
     list-style: none;
 }
+
+#support-card img {
+    border-radius: 10%;
+}

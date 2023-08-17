@@ -1,0 +1,9 @@
+#main-card {
+    border-radius: 5%;
+}
+
+#image-collection {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
