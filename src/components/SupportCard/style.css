@@ -1,13 +1,19 @@
 #support-card {
     list-style: none;
+    display: flex;
+    align-items: center;
 }
 
 #support-card img {
     border-radius: 10%;
 }
 
-#support-card img:hover {
+#support-card:hover {
     cursor: pointer;
     box-shadow: 0px 0px 0px 3px rgb(255, 125, 26);
     border-radius: 10%;
+}
+
+#support-card img:hover {
+    opacity: 0.5;
 }
