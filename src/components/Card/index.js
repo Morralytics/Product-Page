@@ -22,17 +22,22 @@ const Card = () => {
       ...action,
     }),
     {
-      mainImage: '../images/image-product-1.jpg'
+      mainImage: '../images/image-product-1.jpg',
+      active: 0
     }
   );
   // This is now rendering each card as their own SupportCard child that will be rendered into this parent component
   // Next I need to render a single card that can change when the child element is hovered (not sure if that is possible)
   const handleClick = (e) => {
-    dispatch({mainImage: e.target.getAttribute('src')});
+    dispatch(
+      {
+        mainImage: e.target.getAttribute('src'),
+        active: e.target.id
+      });
   }
 
   const card = cards.map((card, i) => {
-    return <SupportCard key={i} keyId={i} card={card} handleClick={handleClick}/>
+    return <SupportCard key={i} keyId={i} card={card} active={state.active} handleClick={handleClick}/>
   });
 
   return (
