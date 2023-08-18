@@ -15,7 +15,7 @@ const Card = () => {
     fetch('/data/image.json')
       .then((response) => response.json())
       .then((data) => setCards(data))
-  }, []);
+  }, [active]);
 
   const [state, dispatch] = useReducer(
     (state, action) => ({
@@ -30,7 +30,7 @@ const Card = () => {
   // This is now rendering each card as their own SupportCard child that will be rendered into this parent component
   // Next I need to render a single card that can change when the child element is hovered (not sure if that is possible)
   const handleClick = (e) => {
-    setActive(e.target.id)
+    setActive(parseInt(e.target.id))
     dispatch(
       {
         mainImage: e.target.getAttribute('src')
