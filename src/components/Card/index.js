@@ -6,6 +6,7 @@ import './style.css';
 const Card = () => {
 
   const [cards, setCards] = useState([]);
+  const [active, setActive] = useState(0);
 
   // I am using state to save the fetched data into state
   // I am using the useEffect hook here with an empty dependency ( , [] ) so that it will only render once on DOM load
@@ -23,22 +24,18 @@ const Card = () => {
     }),
     {
       mainImage: '../images/image-product-1.jpg',
-      active: 0
     }
   );
+
   // This is now rendering each card as their own SupportCard child that will be rendered into this parent component
   // Next I need to render a single card that can change when the child element is hovered (not sure if that is possible)
   const handleClick = (e) => {
+    setActive(e.target.id)
     dispatch(
       {
-        mainImage: e.target.getAttribute('src'),
-        active: e.target.id
-      });
+        mainImage: e.target.getAttribute('src')
+      })
   }
-
-  const card = cards.map((card, i) => {
-    return <SupportCard key={i} keyId={i} card={card} active={state.active} handleClick={handleClick}/>
-  });
 
   return (
     <div>
@@ -50,7 +47,12 @@ const Card = () => {
       
       {/* This new displayCard function will render an image that has been saved to selectedImage state */}
       <ul id='image-collection'>
-        {card}
+        {cards.length ? (
+          cards.map((card, i) => 
+            <SupportCard key={i} keyId={i} card={card} active={active} handleClick={handleClick}/>
+        )) : (
+          <></>
+        )}
       </ul>
     </div>
   )
