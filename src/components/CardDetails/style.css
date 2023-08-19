@@ -1,0 +1,44 @@
+
+/* Media query for screen sizes over 1920px (my desktop screen size) */
+@media (min-width: 1920px) {
+    #card-details {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+    }
+    
+    #card-details-header {
+        font-size: 42px;
+    }
+}
+
+/* Media query for screen sizes over 1440px */
+@media (min-width: 1440px) {
+    #card-details {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+    }
+    
+    #card-details-header {
+        font-size: 42px;
+    }
+}
+
+/* Media query for screen sizes over 375px and under 1440px */
+@media (max-width: 1440px) {
+    #card-details {
+        display: flex;
+        flex-direction: column;
+        width: 25vw;
+    }
+    
+    #card-details-header {
+        font-size: 42px;
+    }
+}
+
+/* Media query for screen sizes under 375px */
+@media (max-width: 375px) {
+    
+}

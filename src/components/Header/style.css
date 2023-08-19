@@ -13,7 +13,7 @@
 }
 
 #collections-list {
-    margin-left: 8rem;
+    margin-left: 6rem;
     margin-top: 3rem;
     color: #7C7D81;
 }
@@ -23,7 +23,7 @@
 }
 
 #user-items {
-    margin-right: 10.5rem;
+    margin-right: 8.5rem;
 }
 
 #user-items li {
@@ -68,3 +68,26 @@
     margin-right: -2px;
     margin-left: -2px;
 }
+
+/* @media (max-width: 1920px) {
+    #user-items {
+        margin-right: 10.5rem;
+    }
+
+    #collections-list {
+        margin-left: 8rem;
+        margin-top: 3rem;
+    }
+
+}
+
+@media (max-width: 1440px) {
+    #user-items {
+        margin-right: 8.5rem;
+    }
+
+    #collections-list {
+        margin-left: 6rem;
+        margin-top: 3rem;
+    }
+} */

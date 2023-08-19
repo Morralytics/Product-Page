@@ -1,4 +1,6 @@
 #card-information {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 15%;
 }
