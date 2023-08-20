@@ -1,6 +1,9 @@
 import React from 'react';
 import './style.css';
 
+import Counter from '../Counter';
+import AddToCart from '../AddToCart';
+
 const CardDetails = () => {
   return (
     <section id='card-details'>
@@ -16,6 +19,10 @@ const CardDetails = () => {
           <td id='original-price'>$250.00</td>
         </tr>
       </table>
+      <section id='add-to-cart-items'>
+        <Counter />
+        <AddToCart />
+      </section>
     </section>
   )
 };

@@ -39,6 +39,10 @@
     text-decoration: line-through;
 }
 
+#add-to-cart-items {
+    display: flex;
+}
+
 /* Media query for screen sizes over 1440px */
 @media (min-width: 1440px) {
     #card-details {
