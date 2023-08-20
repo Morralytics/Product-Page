@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial');
 
+#header {
+    margin-top: -1%;
+    margin-bottom: -1%;
+}
+
 #nav-bar,
 .nav-items {
     list-style: none;

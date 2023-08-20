@@ -13,7 +13,7 @@ const CardDetails = () => {
           <td id='discount-amount'>50%</td>
         </tr>
         <tr>
-          <p id='original-price'>$250.00</p>
+          <td id='original-price'>$250.00</td>
         </tr>
       </table>
     </section>

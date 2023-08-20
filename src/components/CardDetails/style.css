@@ -17,14 +17,41 @@
     color: #7C7D81;
 }
 
-tr :first-child {
-    width: 30%;
+#card-price-info {
+    width: 38%;
+}
+
+#current-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#discount-amount {
+    color:rgb(255, 125, 26);
+    background-color: #FFEDE0;
+    border-radius: 15%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#original-price {
+    color: #7C7D81;
+    text-decoration: line-through;
 }
 
 /* Media query for screen sizes over 1440px */
 @media (min-width: 1440px) {
     #card-details {
         width: 25vw;
+    }
+
+    #card-details > * {
+        margin: 0px;
+        padding-bottom: 5%;
+    }
+    
+    #card-details-header {
+        padding-bottom: 8%;
     }
 }
 

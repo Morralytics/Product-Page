@@ -38,7 +38,7 @@ const Card = () => {
   }
 
   return (
-    <div>
+    <div id='card-images'>
       {cards.length ? (
         <img src={state.mainImage} alt='main-card' id='main-card' width='500px'/>
       ) : (
