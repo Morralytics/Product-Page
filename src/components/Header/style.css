@@ -69,25 +69,26 @@
     margin-left: -2px;
 }
 
-/* @media (max-width: 1920px) {
-    #user-items {
-        margin-right: 10.5rem;
-    }
-
+/* Media query for screen sizes over 1440px */
+@media (min-width: 1440px) {
     #collections-list {
         margin-left: 8rem;
         margin-top: 3rem;
     }
 
+    #user-items {
+        margin-right: 10.5rem;
+    }
 }
 
+/* Media query for screen sizes over 375px and under 1440px */
 @media (max-width: 1440px) {
-    #user-items {
-        margin-right: 8.5rem;
-    }
-
     #collections-list {
-        margin-left: 6rem;
+        margin-left: 4.5rem;
         margin-top: 3rem;
     }
-} */
+
+    #user-items {
+        margin-right: 7rem;
+    }
+}
