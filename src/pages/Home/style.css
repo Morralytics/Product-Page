@@ -1,6 +1,20 @@
 #card-information {
     display: flex;
     justify-content: space-between;
-    margin-right: 15%;
+}
+
+/* Media query for screen sizes over 1440px */
+@media (min-width: 1440px) {
+  #card-information {
+    margin-right: 18%;
+    margin-left: 18%;
+  }
+}
+
+/* Media query for screen sizes over 375px and under 1440px */
+@media (max-width: 1440px) {
+  #card-information {
+    margin-right: 12%;
     margin-left: 15%;
+  }
 }
