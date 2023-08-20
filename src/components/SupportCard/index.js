@@ -8,7 +8,7 @@ const SupportCard = ({keyId, card, active, handleClick}) => {
 
   if (active === keyId) {
     return (
-      <li id='support-card'><img src={card.img} alt={'card' + keyId} id='active' width='100px' onClick={handleClick}/></li>
+      <li id='support-card-active'><img src={card.img} alt={'card' + keyId} id='active' width='100px' onClick={handleClick}/></li>
     )
   } else {
     return <li id='support-card'><img src={card.img} alt={'card' + keyId} id={keyId} width='100px' onClick={handleClick}/></li>
