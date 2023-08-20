@@ -30,11 +30,23 @@
     #card-details {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 25vw;
+    }
+
+    #card-details > * {
+        margin: 0px;
+        padding-bottom: 5%;
     }
     
     #card-details-header {
         font-size: 42px;
+        padding-bottom: 8%;
+    }
+
+    #card-price-info {
+        display: grid;
+
     }
 }
 
