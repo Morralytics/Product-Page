@@ -29,7 +29,7 @@
 #discount-amount {
     color:rgb(255, 125, 26);
     background-color: #FFEDE0;
-    border-radius: 15%;
+    border-radius: 5% / 25%;;
     font-weight: bold;
     text-align: center;
 }
@@ -41,6 +41,7 @@
 
 #add-to-cart-items {
     display: flex;
+    justify-content: space-between;
 }
 
 /* Media query for screen sizes over 1440px */

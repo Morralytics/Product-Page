@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css'
 // Imports that will need to transition to public folder on deployment
 // import cartIcon from '../../../public/images/icon-cart.svg'
-import cartIcon from '../../assets/images/icon-cart.svg';
+import cartIcon from '../../assets/images/icon-cart-header.svg';
 import profilePic from '../../assets/images/image-avatar.png';
 
 const Header = () => {

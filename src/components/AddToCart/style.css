@@ -1,0 +1,18 @@
+#add-to-cart-btn {
+    border-style: none;
+    background-color: rgb(255, 125, 26);
+    color: white;
+    border-radius: 5% / 25%;
+    margin-right: 10%;
+    width: 50%;
+}
+
+#add-to-cart-btn > * {
+    padding-right: 10%;
+    margin-right: 5px;
+    margin-bottom: -3px;
+}
+
+#add-to-cart-btn:hover {
+    cursor: pointer;
+}
