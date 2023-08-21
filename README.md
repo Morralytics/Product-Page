@@ -28,4 +28,4 @@ Users will be able to:
 
 ## Resulting Image
 
-![Product-Page](../product-page/src/assets/images/Product-Page.png)
+![Product-Page](/src/assets/images/Product-Page.png)
