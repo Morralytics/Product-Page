@@ -1,8 +1,8 @@
-import React, { useReducer, useState } from 'react';
+import React, { useReducer} from 'react';
 
 const Counter = () => {
 
-  const [counter, setCounter] = useReducer(
+  const [state, dispatch] = useReducer(
     (state, action) => ({
       ...state,
       ...action
@@ -12,20 +12,21 @@ const Counter = () => {
     })
 
   const itemCountPlus = () => {
-    let currentCounter = counter
-    setCounter(currentCounter++)
+      dispatch({count: state.count + 1})
   }
 
   const itemCountMinus = () => {
-
+    if(state.count > 0) {
+      dispatch({count: state.count - 1})
+    }
   }
 
   return (
     <table>
       <tr>
-        <td>-</td>
-        <td>{counter}</td>
-        <td onClick={itemCountPlus}>+</td>
+        <td><button onClick={itemCountMinus}>-</button></td>
+        <td>{state.count}</td>
+        <td><button onClick={itemCountPlus}>+</button></td>
       </tr>
     </table>
   )
