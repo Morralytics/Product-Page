@@ -1,4 +1,5 @@
 import React, { useReducer} from 'react';
+import './style.css';
 
 const Counter = () => {
 
@@ -22,11 +23,11 @@ const Counter = () => {
   }
 
   return (
-    <table>
+    <table className='bar'>
       <tr>
-        <td><button onClick={itemCountMinus}>-</button></td>
-        <td>{state.count}</td>
-        <td><button onClick={itemCountPlus}>+</button></td>
+        <td><button className='button bar' onClick={itemCountMinus}>-</button></td>
+        <td id='num-count'>{state.count}</td>
+        <td><button className='button bar' onClick={itemCountPlus}>+</button></td>
       </tr>
     </table>
   )

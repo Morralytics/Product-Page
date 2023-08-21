@@ -1,0 +1,26 @@
+.bar {
+    background-color: #F7F8FD;
+    border-radius: 10%;
+    width: 35%;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.button {
+    border-style: none;
+    color: rgb(255, 125, 26);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+#num-count {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 16px;
+    font-weight: bold;
+}
